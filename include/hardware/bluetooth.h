@@ -132,7 +132,6 @@ typedef struct
    char name[256]; // what's the maximum length
 } bt_service_record_t;
 
-
 /** Bluetooth Remote Version info */
 typedef struct
 {

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2011 The Android Open Source Project
- * Copyright (c) 2011-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2014, The Linux Foundation. All rights reserved.
  * Not a Contribution.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -439,7 +439,7 @@ struct audio_stream_out {
      *
      * Implementation of this function is mandatory for offloaded playback.
      */
-    int (*flush)(struct audio_stream_out* stream);
+   int (*flush)(struct audio_stream_out* stream);
 
     /**
      * Return a recent count of the number of audio frames presented to an external observer.
@@ -484,7 +484,6 @@ struct audio_stream_out {
     int (*is_buffer_available) (const struct audio_stream_out *stream,
                                      int *isAvail);
 #endif
-
 };
 typedef struct audio_stream_out audio_stream_out_t;
 
